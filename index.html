@@ -47,7 +47,8 @@
 
     <script>
         var zipCode = "060667";
-        const checkZipCode = function() {
+
+        function checkZipCode() {
             switch (zipCode) {
 
                 case "06611":
@@ -70,6 +71,27 @@
     </script>
     <!-- ########################## -->
 
+    <!-- Count -->
+    <p id="count"></p>
+    <button onclick=count()>Count</button>
+
+    <script>
+        function count() {
+
+            // var x = 0;
+            // while (x < 101) {
+            //     document.getElementById("count").innerHTML += (x + "<br>");
+            //     x += 5;
+            // }
+
+            var i = 100;
+            do {
+                document.getElementById("count").innerHTML += (i + "<br>");
+                i--;
+            } while (i > -1);
+        }
+    </script>
+    <!-- ########################## -->
 </body>
 
 </html>
