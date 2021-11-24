@@ -177,9 +177,26 @@
             document.getElementById("result").innerHTML = "Bye User!";
         }
     </script> -->
-    <!-- ########################## -->
 
     <script src="functions.js"></script>
+    <!-- ########################## -->
+
+    <!-- function3 -->
+    password: <input id="password" type="password" onchange="checkPw(this.value)">
+    <output id="pwStatus"></output>
+
+    <script>
+        function checkPw(pw) {
+            if (pw == "chocolate") {
+                document.getElementById("pwStatus").innerHTML = "Password Correct";
+                document.getElementById("password").style.backgroundColor = "rgb(255, 255, 255)";
+            } else {
+                document.getElementById("pwStatus").innerHTML = "";
+                document.getElementById("password").style.backgroundColor = "rgb(225, 0, 0)";
+            }
+        }
+    </script>
+    <!-- ########################## -->
 </body>
 
 </html>
