@@ -197,6 +197,38 @@
         }
     </script>
     <!-- ########################## -->
+
+    <!-- Array Function -->
+    <p id="array-function"></p>
+    <button onclick=arrayFunction()>Array Function</button>
+
+    <script>
+        var airlines = new Array(); // Array 1
+        airlines[0] = "Delta";
+        airlines[1] = "US Airways";
+        airlines[2] = "Americans";
+        airlines[3] = "JetBlue";
+        airlines[4] = "Virgin America"
+        airlines[5] = "United";
+        airlines[6] = "Air Canada";
+        airlines[7] = "South West";
+        airlines[8] = "British Airways";
+
+        function arrayFunction() {
+            var output = "The position of South West is: " + airlines.indexOf("South West");
+            document.getElementById("array-function").innerHTML = output;
+
+            // airlines.sort();
+            airlines.reverse();
+            airlines.push("AeroMexico")
+            airlines.pop();
+            for (var i = 0; i < airlines.length; i++) {
+                document.getElementById("array-function").innerHTML += "<br>" + airlines[i];
+            }
+        }
+    </script>
+    <!-- ########################## -->
+
 </body>
 
 </html>
