@@ -101,8 +101,28 @@
         function countFor() {
             for (var i = 0; i < 101; i++) {
                 document.getElementById("count-for").innerHTML += i + "<br>";
-
             }
+        }
+    </script>
+    <!-- ########################## -->
+
+    <!-- Arrays -->
+    <p id="arrays"></p>
+    <button onclick=showArray()>Arrays</button>
+
+    <script>
+        var airlines = new Array(); // Array 1
+        airlines[0] = "Delta";
+        airlines[1] = "US Airways";
+        airlines[2] = "Americans";
+        airlines[3] = "JetBlue";
+        airlines[4] = "Virgin America"
+
+        var family = new Array("Mark", "Brett", "Kerry", "Joan", "Rick"); // Array 2
+        var states = ["Connecticut", "New York", "Vermont", "Texas", "Washington"]; // Array 3
+
+        function showArray() {
+            document.getElementById("arrays").innerHTML = airlines[3] + "<br>" + family[3] + "<br>" + states[2];
         }
     </script>
     <!-- ########################## -->
