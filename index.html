@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <!-- Output  -->
     <p id="output"></p>
     <button onclick=outputVar()>Output</button>
     <script>
@@ -20,7 +21,9 @@
             document.getElementById("output").innerHTML = "Score: " + score + " Age: " + age;
         }
     </script>
+    <!-- ########################## -->
 
+    <!-- CheckScore -->
     <p id="check-score"></p>
     <button onclick=checkScore()>Check Score</button>
     <script>
@@ -36,6 +39,37 @@
             }
         }
     </script>
+    <!-- ########################## -->
+
+    <!-- CheckZipCode -->
+    <p id="check-zip-code"></p>
+    <button onclick=checkZipCode()>Check Town</button>
+
+    <script>
+        var zipCode = "060667";
+        const checkZipCode = function() {
+            switch (zipCode) {
+
+                case "06611":
+                    town = "Trumbull";
+                    break;
+                case "06066":
+                    town = "Vernon";
+                    break;
+                case "06443":
+                    town = "Madison";
+                    break;
+                case "06880":
+                    town = "Westport";
+                default:
+                    town = "No match found";
+            }
+
+            document.getElementById("check-zip-code").innerHTML = "Town: " + town;
+        }
+    </script>
+    <!-- ########################## -->
+
 </body>
 
 </html>
