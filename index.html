@@ -127,6 +127,33 @@
     </script>
     <!-- ########################## -->
 
+    <!-- Array with for loop -->
+    <p id="array-for-loop"></p>
+    <button onclick=arrayForLoop()>Array For Loop</button>
+
+    <script>
+        var airlines = new Array(); // Array 1
+        airlines[0] = "Delta";
+        airlines[1] = "US Airways";
+        airlines[2] = "Americans";
+        airlines[3] = "JetBlue";
+        airlines[4] = "Virgin America"
+        airlines[5] = "United";
+        airlines[6] = "Air Canada";
+        airlines[7] = "South West";
+        airlines[8] = "British Airways";
+
+        function arrayForLoop() {
+
+            var len = airlines.length;
+            for (var i = 0; i < len; i++) {
+                document.getElementById("array-for-loop").innerHTML += airlines[i] + "<br>";
+            }
+
+        }
+    </script>
+    <!-- ########################## -->
+
 </body>
 
 </html>
