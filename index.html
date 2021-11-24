@@ -20,6 +20,22 @@
             document.getElementById("output").innerHTML = "Score: " + score + " Age: " + age;
         }
     </script>
+
+    <p id="check-score"></p>
+    <button onclick=checkScore()>Check Score</button>
+    <script>
+        var score = 12000;
+        var highScore = 15000;
+
+        function checkScore() {
+            if (score > highScore) {
+                highScore = score;
+                document.getElementById("check-score").innerHTML = "You have new High Score: " + highScore;
+            } else {
+                document.getElementById("check-score").innerHTML = "Your score isn't high score: " + score;
+            }
+        }
+    </script>
 </body>
 
 </html>
