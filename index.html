@@ -258,12 +258,30 @@
             "The dog's gender is: " + dog.gender + "<br>" +
             "The dog's age is: " + dog.age + "<br>" +
             "The dog's breed is: " + dog.breed + "<br>"
-        )
+        );
 
         for (x in dog) {
             document.writeln(dog[x] + "<br>");
         }
     </script>
+    <!-- ########################## -->
+
+    <!-- Constructor function -->
+    <script>
+        function Car(model, distanceMoved, timeElapsed) {
+            this.model = model;
+            this.distanceMoved = distanceMoved;
+            this.timeElapsed = timeElapsed;
+        }
+
+        var myCar = new Car("Audi", 120, 1.2)
+
+        document.writeln("<br>" + "The model of the car is: " + myCar.model + "<br>" +
+            "The distance travelled is: " + myCar.distanceMoved + "<br>" +
+            "The time elapsed is: " + myCar.timeElapsed
+        );
+    </script>
+
     <!-- ########################## -->
 
 </body>
