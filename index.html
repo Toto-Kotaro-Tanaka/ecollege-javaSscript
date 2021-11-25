@@ -252,12 +252,17 @@
         dog.gender = "male";
         dog.age = 3;
         dog.breed = "mixed";
+        dog.train = true;
 
         document.writeln("<br>" + "The dog's name is: " + dog.name + "<br>" +
             "The dog's gender is: " + dog.gender + "<br>" +
             "The dog's age is: " + dog.age + "<br>" +
             "The dog's breed is: " + dog.breed + "<br>"
         )
+
+        for (x in dog) {
+            document.writeln(dog[x] + "<br>");
+        }
     </script>
     <!-- ########################## -->
 
