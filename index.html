@@ -11,7 +11,7 @@
 <body>
     <!-- Output  -->
     <p id="output"></p>
-    <button onclick=outputVar()>Output</button>
+    <button onclick="outputVar()">Output</button>
     <script>
         var score;
         score = 1000;
@@ -25,7 +25,7 @@
 
     <!-- CheckScore -->
     <p id="check-score"></p>
-    <button onclick=checkScore()>Check Score</button>
+    <button onclick="checkScore()">Check Score</button>
     <script>
         var score = 12000;
         var highScore = 15000;
@@ -43,7 +43,7 @@
 
     <!-- CheckZipCode -->
     <p id="check-zip-code"></p>
-    <button onclick=checkZipCode()>Check Town</button>
+    <button onclick="checkZipCode()">Check Town</button>
 
     <script>
         var zipCode = "060667";
@@ -73,7 +73,7 @@
 
     <!-- Count -->
     <p id="count"></p>
-    <button onclick=count()>Count</button>
+    <button onclick="count()">Count</button>
 
     <script>
         function count() {
@@ -95,7 +95,7 @@
 
     <!-- Count with for loop -->
     <p id="count-for"></p>
-    <button onclick=countFor()>Count For</button>
+    <button onclick="countFor()">Count For</button>
 
     <script>
         function countFor() {
@@ -108,7 +108,7 @@
 
     <!-- Arrays -->
     <p id="arrays"></p>
-    <button onclick=showArray()>Arrays</button>
+    <button onclick="showArray()">Arrays</button>
 
     <script>
         var airlines = new Array(); // Array 1
@@ -129,7 +129,7 @@
 
     <!-- Array with for loop -->
     <p id="array-for-loop"></p>
-    <button onclick=arrayForLoop()>Array For Loop</button>
+    <button onclick="arrayForLoop()">Array For Loop</button>
 
     <script>
         var airlines = new Array(); // Array 1
@@ -155,7 +155,7 @@
     <!-- ########################## -->
 
     <!-- function -->
-    <input id="clickme" type="submit" name="clickme" value="Click me" onclick=runFunction()>
+    <input id="clickme" type="submit" name="clickme" value="Click me" onclick="runFunction()">
     <script>
         function runFunction() {
             alert("You clicked a button");
@@ -165,8 +165,8 @@
 
     <!-- function2 -->
     <p id="result"></p>
-    <button onclick=greatUser()>Great User</button>
-    <button onclick=sayBye()>Say By</button>
+    <button onclick="greatUser()">Great User</button>
+    <button onclick="sayBye()">Say By</button>
 
     <!-- <script>
         function greatUser() {
@@ -200,7 +200,7 @@
 
     <!-- Array Function -->
     <p id="array-function"></p>
-    <button onclick=arrayFunction()>Array Function</button>
+    <button onclick="arrayFunction()">Array Function</button>
 
     <script>
         var airlines = new Array(); // Array 1
@@ -237,11 +237,11 @@
         }
         // mathCalc(2.56)
 
-        var anon1 = function(num1) {
-            num1 = Math.round(num1);
-            // alert(num1)
-        }
-        anon1(25.6)
+        // var anon1 = function(num1) {
+        //     num1 = Math.round(num1);
+        //     // alert(num1)
+        // }
+        // anon1(25.6)
     </script>
     <!-- ########################## -->
 
@@ -319,6 +319,22 @@
         // "This model is the CRV which has a 4-cylinder engine and 185 bhp"
     </script>
     <!-- ########################## -->
+
+    <!-- How to obtain the attribute of an object -->
+    <form action="">
+        Get the value <br />
+        <input type="button" name="myBtnName" id="myBtnID" value="Press now!" onclick="getValue()" /><br /> Value equals
+        <div id="value1"><br /></div><br />
+    </form>
+
+    <script>
+        function getValue() {
+            var x = document.getElementById("myBtnID").name;
+            document.getElementById("value1").innerHTML = x;
+        }
+    </script>
+    <!-- ########################## -->
+
 </body>
 
 </html>
