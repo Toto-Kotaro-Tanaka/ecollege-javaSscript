@@ -335,6 +335,41 @@
     </script>
     <!-- ########################## -->
 
+    <!-- Inheritance and extending classes -->
+    <script>
+        // Base constructor
+
+        function CarInhe(make, model, transmission) {
+
+            this.make = make;
+            this.model = model;
+            this.transmission = transmission;
+            this.reportStats = function() {
+                return ("Make: " + this.make + " Model: " + this.model);
+            }
+        }
+
+        function SUV(make, model, transmission, mpg) {
+
+            this.mpg = mpg;
+            this.carInfo = CarInhe;
+            this.carInfo(make, model, transmission);
+        }
+
+        SUV.prototype = new CarInhe();
+
+        SUV.prototype.getMPG = function() {
+
+            return "This SUV mpg is " + this.mpg;
+        }
+
+        mySUV = new SUV("Kia", "Sportage", "manual", 32);
+
+        myCar = new CarInhe("WV", "Jetta", "automatic");
+        document.writeln(mySUV.reportStats());
+        // document.writeln(myCar.getMPG());
+    </script>
+    <!-- ########################## -->
 </body>
 
 </html>
