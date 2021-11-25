@@ -288,9 +288,37 @@
             "The velocity is: " + myCar.velocity() + " km/h"
         );
     </script>
-
     <!-- ########################## -->
 
+    <!-- Prototyping -->
+    <script>
+        function CarProp(model, numCylinders, horsepower) {
+            this.model = model;
+            this.numCylinders = numCylinders;
+            this.horsepower = horsepower;
+        }
+
+        // Use prototyping to add a property
+        CarProp.prototype.color = "red";
+
+        // Use prototyping to add method
+        CarProp.prototype.reportInfo = function() {
+
+            document.write("This model is the " + this.model +
+                "which has a " + this.numCylinders +
+                "-cylinder engine and " + this.horsepower + "bhp" +
+                " and the color is " + this.color
+            )
+        }
+
+        var honda = new CarProp("CRV", "4", "185");
+
+        honda.color = "silver";
+
+        honda.reportInfo();
+        // "This model is the CRV which has a 4-cylinder engine and 185 bhp"
+    </script>
+    <!-- ########################## -->
 </body>
 
 </html>
