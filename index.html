@@ -229,6 +229,38 @@
     </script>
     <!-- ########################## -->
 
+    <!-- Anonymous Functions -->
+    <script>
+        function mathCalc(num1) {
+            num1 = Math.round(num1);
+            // alert(num1);
+        }
+        // mathCalc(2.56)
+
+        var anon1 = function(num1) {
+            num1 = Math.round(num1);
+            // alert(num1)
+        }
+        anon1(25.6)
+    </script>
+    <!-- ########################## -->
+
+    <!-- Object -->
+    <script>
+        var dog = new Object();
+        dog.name = "Teddy";
+        dog.gender = "male";
+        dog.age = 3;
+        dog.breed = "mixed";
+
+        document.writeln("<br>" + "The dog's name is: " + dog.name + "<br>" +
+            "The dog's gender is: " + dog.gender + "<br>" +
+            "The dog's age is: " + dog.age + "<br>" +
+            "The dog's breed is: " + dog.breed + "<br>"
+        )
+    </script>
+    <!-- ########################## -->
+
 </body>
 
 </html>
