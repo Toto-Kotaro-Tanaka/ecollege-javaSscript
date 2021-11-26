@@ -414,11 +414,11 @@
     <!-- Substring -->
     <script type="text/javascript">
         var str2 = "Hello World!";
-        var n = str2.substr(2, 3);
+        var n = str2.substr(2, 8);
 
         document.writeln("<br>" + "This is the result of the substr method: " + n + "<br>");
 
-        var m = str2.substring(2, 3);
+        var m = str2.substring(3, 5);
 
         document.writeln("<br>" + "This is the result of the substring method: " + m + "<br>")
     </script>
@@ -498,6 +498,38 @@
         // Setting specific information
         birthday.setYear(1975);
         document.writeln("This is the new date: " + birthday.toLocaleDateString() + "<br>");
+    </script>
+    <!-- ########################## -->
+
+    <!-- The boolean object -->
+    <script type="text/javascript">
+        a = false;
+        b = new Boolean(false);
+        document.write(typeof a); // "boolean"
+        document.write(" // ")
+        document.write(typeof b); // "object"
+
+        c = Boolean(1);
+        d = Boolean(0);
+        e = Boolean(2 > 5)
+
+        // alert("c is " + c + " d is " + d + " e is " + e);
+    </script>
+    <!-- ########################## -->
+
+    <!-- Nesting if statement -->
+    <script type="text/javascript">
+        var h = 12;
+
+        if (h > 5) {
+            if (h < 11) {
+                alert("Within range");
+            } else {
+                alert("Outside range")
+            }
+        } else {
+            alert("Outside range");
+        }
     </script>
     <!-- ########################## -->
 
