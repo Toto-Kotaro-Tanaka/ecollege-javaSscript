@@ -523,12 +523,27 @@
 
         if (h > 5) {
             if (h < 11) {
-                alert("Within range");
+                // alert("Within range");
             } else {
-                alert("Outside range")
+                // alert("Outside range")
             }
         } else {
-            alert("Outside range");
+            // alert("Outside range");
+        }
+    </script>
+    <!-- ########################## -->
+
+    <!-- Nesting loops -->
+    <script type="text/javascript">
+        // for statement
+        document.write("here's the for loop <br>");
+        for (var i = 1; i <= 10; i++) {
+            // Execute this code 10 times
+            document.writeln("The value of i is: " + i + "<br>");
+
+            for (var j = 1; j <= 3; j++) {
+                document.writeln("### The value of J is: " + j + " ###" + "<br>");
+            }
         }
     </script>
     <!-- ########################## -->
