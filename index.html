@@ -465,7 +465,6 @@
     <!-- ########################## -->
 
     <!-- Number object -->
-
     <div id="div1"></div>
     <button name="button1" onclick="rollDice()">Roll the dice</button>
 
@@ -476,6 +475,29 @@
 
             var result = document.getElementById("div1").innerHTML = "Die one is : " + num1 + "//" + num2;
         }
+    </script>
+    <!-- ########################## -->
+
+    <!-- Getting data and time -->
+    <script type="text/javascript">
+        var today = new Date();
+
+        var anniversary = new Date("February 21, 1995 05:00:00");
+
+        var birthday = new Date(1970, 12, 02);
+
+        // Formatting
+        document.writeln("<br>" + "This is the result of creating a standard Data object: " + today.toString() + "<br>");
+        document.writeln("This is the result of using the GMTString: " + anniversary.toGMTString() + "<br>");
+        document.writeln("This is the result of using the UTCstring: " + anniversary.toUTCString() + "<br>");
+        document.writeln("This is the result of using the localString: " + birthday.toLocaleString() + "<br>");
+
+        // Getting specific information
+        document.writeln("This is the day: " + today.getDay() + "<br>");
+
+        // Setting specific information
+        birthday.setYear(1975);
+        document.writeln("This is the new date: " + birthday.toLocaleDateString() + "<br>");
     </script>
     <!-- ########################## -->
 
