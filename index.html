@@ -375,12 +375,42 @@
     <script type="text/javascript">
         var z = 10;
         if (typeof z === "undefined") {
-            alert("Z undefined");
+            // alert("Z undefined");
         } else {
-            alert(z);
+            // alert(z);
         }
     </script>
     <!-- ########################## -->
+
+    <!-- Null value -->
+    <script type="text/javascript">
+        var obj = 10;
+        obj = null;
+        // alert("obj=" + obj + "type: " + typeof(obj));
+    </script>
+    <!-- ########################## -->
+
+    <!-- Regular Expression -->
+    <script type="text/javascript">
+        // i --- case insensitive
+        var str = "This is a sample string";
+        var re = /Sample/i;
+        var re = new RegExp("sample", "i");
+
+        var check = re.exec(str);
+        if (check) {
+            // alert("Found a match");
+            // alert(check);
+        } else {
+            // alert("No match found");
+        }
+
+        var check2 = re.test(str);
+
+        // alert(check2);
+    </script>
+    <!-- ########################## -->
+
 </body>
 
 </html>
