@@ -446,6 +446,24 @@
     </script>
     <!-- ########################## -->
 
+    <!-- Number object -->
+    <script type="text/javascript">
+        var myNum1 = 123.45678910;
+
+        var myNum2D = myNum1.toFixed(2);
+
+        document.writeln("This is the result of the toFixed method: " + myNum2D + "<br>");
+
+        var myNum2 = 123.45678910;
+
+        document.writeln("This is the result of myNum2.toPrecision(): " + myNum2.toPrecision() + "<br>");
+        document.writeln("This is the result of myNum2.toPrecision(2): " + myNum2.toPrecision(2) + "<br>");
+        document.writeln("This is the result of myNum2.toPrecision(3): " + myNum2.toPrecision(3) + "<br>");
+
+        document.writeln("LocaleString: " + myNum2.toLocaleString() + "<br>");
+    </script>
+    <!-- ########################## -->
+
 </body>
 
 </html>
