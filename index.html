@@ -548,6 +548,25 @@
     </script>
     <!-- ########################## -->
 
+    <!-- Break and Continue statements -->
+    <script type="text/javascript">
+        var k = 10;
+
+        out: for (y = 0; y < 10; y++) {
+            document.write(y + "<br>");
+            myinnerloop:
+                do {
+                    k += 1;
+
+                    document.write(k + "<br>");
+                    if (k == 12) {
+                        break myinnerloop;
+                    }
+                } while (k <= 15);
+        }
+    </script>
+    <!-- ########################## -->
+
 </body>
 
 </html>
