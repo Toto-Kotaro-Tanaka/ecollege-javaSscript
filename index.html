@@ -567,6 +567,42 @@
     </script>
     <!-- ########################## -->
 
+    <!-- The conditional operator  -->
+    <form action="">
+        Number 1 <input type="text" name="num1" /><br>
+        <input type="button" name="button1" onclick="conditionalTest(num1.value)" value="Test">
+    </form>
+
+    <script type="text/javascript">
+        function conditionalTest(x) {
+
+            // if (x > 21) {
+            //     alert("Welcome to the beer festival");
+            // } else {
+            //     alert("Sorry you need ot be 21");
+            // }
+
+            x > 21 ? alert("Welcome to the beer festival") : alert("Sorry you need ot be 21");
+        }
+    </script>
+    <!-- ########################## -->
+
+    <!-- Working with XML  -->
+    <script type="text/javascript">
+        var xmlhttp = new XMLHttpRequest();
+        var url = "invoice.xml";
+        xmlhttp.open("GET", url, false);
+        xmlhttp.send();
+
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            var xmlDoc = xmlhttp.responseXML;
+
+            var number = xmlDoc.getElementsByTagName("Number")[0].childNodes[0].nodeValue;
+            document.writeln(number)
+        }
+    </script>
+    <!-- ########################## -->
+
 </body>
 
 </html>
