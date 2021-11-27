@@ -647,6 +647,34 @@
     </script>
     <!-- ########################## -->
 
+    <!-- Basic event handler  -->
+    <br>
+    <button onclick="displayTime()">Click me to show time</button>
+    <br>
+    <button onmouseover="mouseMoveinMessage()" onmouseout="mouseMoveOutMessage()">Move your mouse here</button>
+    <div id="events" onclick="eventMessage()" style="font-family: Arial; font-size: large; color: red;">Click Here</div>
+
+    <script type="text/javascript">
+        function eventMessage() {
+            alert("You clicked the Div");
+        }
+
+        function mouseMoveinMessage() {
+            alert("You moused over the button");
+        }
+
+        function mouseMoveOutMessage() {
+            alert("Why are you leaving?");
+        }
+
+        function displayTime() {
+            var myDate = new Date();
+            var myTime = myDate.toLocaleTimeString();
+            alert(myTime);
+        }
+    </script>
+    <!-- ########################## -->
+
 </body>
 
 </html>
