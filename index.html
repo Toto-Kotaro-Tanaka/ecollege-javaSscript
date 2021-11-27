@@ -617,11 +617,11 @@
         }
 
         function newEventButtonClicked() {
-            alert("Newer event method");
+            // alert("Newer event method");
         }
 
         function buttonClick() {
-            alert("Old event caller method");
+            // alert("Old event caller method");
         }
 
         function changeDiv() {
@@ -656,15 +656,15 @@
 
     <script type="text/javascript">
         function eventMessage() {
-            alert("You clicked the Div");
+            // alert("You clicked the Div");
         }
 
         function mouseMoveinMessage() {
-            alert("You moused over the button");
+            // alert("You moused over the button");
         }
 
         function mouseMoveOutMessage() {
-            alert("Why are you leaving?");
+            // alert("Why are you leaving?");
         }
 
         function displayTime() {
@@ -731,6 +731,41 @@
         * Neque quisquam mollitia accusamus dolor.
         * Voluptatem consequatur commodi deleniti possimus omnis minima cumque fuga impedit.
         */
+    </script>
+    <!-- ########################## -->
+
+    <!-- JavaScript timers -->
+    <button onclick="delayAlert()">Delay Alert</button>
+    <br>
+    <input type="button" value="Stop Alert" name="" id="" onclick="cancelAlert()">
+    <br>
+    <input type="text" id="clock">
+
+    <script type="text/javascript">
+        var timeoutID;
+
+        function delayAlert() {
+            timeoutID = window.setTimeout(slowAlert, 2000);
+        }
+
+        function slowAlert() {
+            alert("That was really slow!");
+        }
+
+        function cancelAlert() {
+            window.clearTimeout(timeoutID);
+            alert("Alert cancelled");
+        }
+
+        var int = window.setInterval(function() {
+            clock()
+        }, 1000);
+
+        function clock() {
+            var myDate = new Date();
+            var myTime = myDate.toLocaleTimeString();
+            document.querySelector("#clock").value = myTime;
+        }
     </script>
     <!-- ########################## -->
 
