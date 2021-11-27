@@ -675,6 +675,27 @@
     </script>
     <!-- ########################## -->
 
+    <!-- Error handling  -->
+    <script type="text/javascript">
+        function TestTry() {
+            // alert("method ran successfully");
+        }
+        try {
+            TestTry();
+            // Invalid calls, functions or methods in the code
+            TestT();
+        } catch (exception) {
+            // Determine whether or not the browser is IE or Firefox
+
+            if (exception.description == null) {
+                // alert("There was an error in the code. The details are (msg): \n " + exception.message);
+            } else {
+                // alert("There was an error in the code. The details are (desc): \n " + exception.description);
+            }
+        }
+    </script>
+    <!-- ########################## -->
+
 </body>
 
 </html>
