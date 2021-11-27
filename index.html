@@ -769,6 +769,28 @@
     </script>
     <!-- ########################## -->
 
+    <!-- Debugging with the stack -->
+    <script type="text/javascript">
+        function traceIt() {
+            try {
+                throw new Error("myError1");
+            } catch (e) {
+                // alert(e.stack);
+            }
+        }
+
+        function b() {
+            traceIt();
+        }
+
+        function a() {
+            b(3, 4, "\n\n", undefined, {});
+        }
+
+        a("first call, first argument");
+    </script>
+    <!-- ########################## -->
+
 </body>
 
 </html>
