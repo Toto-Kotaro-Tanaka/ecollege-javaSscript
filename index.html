@@ -630,6 +630,23 @@
     </script>
     <!-- ########################## -->
 
+    <!-- JavaScript event object  -->
+    <div id="output-event"></div>
+    <br>
+    <button id="btn-id" onclick="sendEventInfo(event)">Send Event</button>
+
+    <script type="text/javascript">
+        function sendEventInfo(event) {
+            var information = "TimeStamp: " + event.timeStamp;
+            information += "<br>Target: " + event.target.id;
+            information += "<br>X: " + event.clientX;
+            information += "<br>Y: " + event.clientY;
+            information += "<br>Shift Key?: " + event.shiftkey;
+            document.getElementById("output-event").innerHTML = information;
+        }
+    </script>
+    <!-- ########################## -->
+
 </body>
 
 </html>
