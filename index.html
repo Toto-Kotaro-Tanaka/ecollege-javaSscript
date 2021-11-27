@@ -603,6 +603,33 @@
     </script>
     <!-- ########################## -->
 
+    <!-- JavaScript events  -->
+    <p id="output"></p>
+    <button onclick="buttonClick()">Event Old</button>
+    <br>
+    <button id="eventNew">Event New</button>
+    <br>
+    <div id="myDiv" onmouseover="changeDiv()">Mouse Over Me</div>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById("eventNew").addEventListener("click", newEventButtonClicked, false);
+        }
+
+        function newEventButtonClicked() {
+            alert("Newer event method");
+        }
+
+        function buttonClick() {
+            alert("Old event caller method");
+        }
+
+        function changeDiv() {
+            document.getElementById("myDiv").style.backgroundColor = "red";
+        }
+    </script>
+    <!-- ########################## -->
+
 </body>
 
 </html>
