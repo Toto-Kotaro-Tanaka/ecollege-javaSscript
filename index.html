@@ -791,6 +791,31 @@
     </script>
     <!-- ########################## -->
 
+    <!-- Encoding and debugging URIs -->
+    <br>
+    <input type="text" name="value1">
+    <br>
+    <button name="button1" onclick="setEncode(value.value)">Encode</button>
+    <br>
+    <button name="button1" onclick="setDecode(value.value)">Decode</button>
+
+    <script type="text/javascript">
+        var newURL;
+
+        function setEncode(myURL) {
+            newURL = encodeURIComponent(myURL);
+            alert(newURL);
+            // document.getElementById("info").innerHTML = newURL.toString();
+        }
+
+        function setDecode() {
+            decodeURL = decodeURIComponent(newURL);
+            alert(decodeURI);
+            // document.getElementById("info").innerHTML = decodeURL.toString();
+        }
+    </script>
+    <!-- ########################## -->
+
 </body>
 
 </html>
