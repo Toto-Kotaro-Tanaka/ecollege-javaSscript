@@ -188,6 +188,60 @@
     </script>
     <!-- ########################## -->
 
+    <!-- Fundamentals: Exceptions -->
+    <script>
+        function mostBasicExample() {
+            try {
+                let num1 = 10;
+                let num2 = 0;
+                let answer = num1 / num2;
+            } catch (error) {
+                alert(error.message)
+            }
+        }
+
+        function exceptionsForValidation() {
+            let datatocheck;
+            datatocheck = document.getElementById("age");
+
+            try {
+                if (datatocheck === "")
+                    throw "empty";
+                if (isNaN(datatocheck))
+                    throw "not a number";
+
+                if (datatocheck < 18)
+                    throw "too low";
+                if (datatocheck > 100)
+                    throw "too hight";
+            } catch (error) {
+                alert("Input is " + err);
+            }
+        }
+
+        function finallyExample() {
+            let datatocheck, x;
+            datatocheck = document.getElementById("age");
+
+            try {
+                if (datatocheck === "")
+                    throw "empty";
+                if (isNaN(datatocheck))
+                    throw "not a number";
+
+                if (datatocheck < 5)
+                    throw "too low";
+                if (datatocheck > 10)
+                    throw "too hight";
+            } catch (err) {
+                alert("Input is " + err);
+            } finally {
+                document.getElementById("age").value = "";
+            }
+        }
+    </script>
+    <!-- ########################## -->
+
 </body>
 
 </html>
