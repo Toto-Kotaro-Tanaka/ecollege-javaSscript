@@ -107,6 +107,21 @@
     </script>
     <!-- ########################## -->
 
+    <!-- Fundamentals: How to detect a user's browser and screen dimensions -->
+    <input type="button" onclick="doIt()" value="Do It">
+    <br><br>
+    <span id="output"></span>
+    <script>
+        function doIt() {
+            const screenSize = "Screen size: " + window.screen.availWidth + " x " + window.screen.availHeight;
+            const windowSize = "Window size: " + window.innerWidth + " x " + window.innerHeight;
+
+            document.querySelector("#output").innerHTML = screenSize;
+            // document.querySelector("#output").innerHTML = windowSize;
+        }
+    </script>
+    <!-- ########################## -->
+
 </body>
 
 </html>
