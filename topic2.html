@@ -84,6 +84,37 @@
     </script>
     <!-- ########################## -->
 
+    <!-- Variables, Data Types and Functions: Function declaration -->
+    <script>
+        function sayHello() {
+            console.log("------------");
+            console.log("hello");
+            console.log("------------");
+        }
+
+        // sayHello();
+        let sayH = sayHello;
+        sayH();
+
+        function sayHello2(name) {
+            console.log("------------");
+            console.log(`Hello, ${name}`);
+            console.log("------------");
+        }
+
+        sayHello2("Bob");
+        sayHello2("Sally");
+
+        function calTax(amount) {
+            let result = amount * 0.0825;
+            return result;
+        }
+
+        let tax = calTax(200);
+        console.log(tax);
+    </script>
+    <!-- ########################## -->
+
 </body>
 
 </html>
