@@ -44,6 +44,21 @@
     </script>
     <!-- ########################## -->
 
+    <!-- Variables, Data Types and Functions: Type Coercion and Conversion -->
+    <script>
+        let h = 7;
+        let i = "6";
+        i = parseInt(i, 10)
+        let j = h + i;
+        console.log("Answer: " + j);
+
+        let k = parseInt("bob", 10); // NaN
+        let l = isNaN(k)
+        console.log(k);
+        console.log(l);
+    </script>
+    <!-- ########################## -->
+
 </body>
 
 </html>
