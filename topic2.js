@@ -172,3 +172,21 @@ let carLot = [
 ];
 
 // ##############################
+
+// Variables, Data Types and Functions: null Type
+
+let notAssigned;
+console.log(notAssigned);
+console.log(typeof notAssigned);
+
+let pattern = /xyz/;
+let value = "This is just a test";
+let result = value.match(pattern);
+console.log(result);
+console.log(typeof result);
+
+if (result === null) {
+    console.log("no match found");
+}
+
+// ##############################
