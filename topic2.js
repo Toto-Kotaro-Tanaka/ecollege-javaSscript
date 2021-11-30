@@ -291,3 +291,25 @@ function doIt() {
 
 document.getElementById("execute").addEventListener("click", doIt);
 // ##############################
+
+// Variables, Data Types and Functions: Compare dates
+
+function compareDate(date1, date2) {
+    // Set specificDate to a specified date at midnight.
+    let specificDate1 = new Date(date1);
+    let specificDate2 = new Date(date2);
+
+    // Compare the two dates by comparing the millisecond
+    // Representations
+    // if (specificDate1.getTime() === specificDate2.getTime()) {
+    //     alert("same");
+    // } else {
+    //     alert("different");
+    // }
+    console.log("clicked");
+}
+
+document
+    .getElementById("compDateBtn")
+    .addEventListener("click", compareDate(date1.value, date2.value));
+// ##############################
