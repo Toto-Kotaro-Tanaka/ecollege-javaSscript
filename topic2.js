@@ -275,3 +275,19 @@ console.log(fibonacci.some((num) => num > 50));
 console.log(fibonacci.some((num) => num > 100));
 
 // ##############################
+
+// Variables, Data Types and Functions: How to Dynamically Generate and Execute JavaScript Commands
+
+function doIt() {
+    let jsExecute = document.getElementById("input").value;
+
+    try {
+        eval(jsExecute);
+    } catch (e) {
+        let txt = "Sorry, but that caused error" + e.message;
+        alert(txt);
+    }
+}
+
+document.getElementById("execute").addEventListener("click", doIt);
+// ##############################
