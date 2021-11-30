@@ -101,3 +101,74 @@ let tax = calTax(200);
 console.log(tax);
 
 // ##############################
+
+// Variables, Data Types and Functions: Basic of scopes
+
+let scope1 = "first";
+
+function scopeTest() {
+    console.log(scope1);
+
+    scope1 = "first - changed";
+
+    if (scope1 != "") {
+        console.log(scope1);
+
+        // let scope3 = "third";
+    }
+
+    // console.log(scope3);
+
+    // let scope2 = "second";
+}
+
+scopeTest();
+// console.slog(scope2);
+console.log(scope1);
+
+// ##############################
+
+// Variables, Data Types and Functions: Object Literals
+
+let car = {
+    make: "bmw",
+    model: "745li",
+    year: 2010,
+    getPrice: function() {
+        // Perform some calc
+        return 5000;
+    },
+    printDescription: function() {
+        console.log(this.make + " " + this.model);
+    },
+};
+
+car.printDescription();
+console.log(car.year);
+console.log(car["year"]);
+
+let anotherCar = {};
+anotherCar.whatever = "Bob";
+console.log(anotherCar.whatever);
+
+let obj = {
+    myProperty: {
+        b: "h1",
+    },
+};
+
+console.log(obj.myProperty.b);
+
+let obj2 = {
+    myProperty2: [{ d: "this" }, { e: "can" }, { f: "get" }, { g: "crazy" }],
+};
+
+console.log(obj2.myProperty2[1]);
+
+let carLot = [
+    { year: 2007, make: "toyota", model: "4runners" },
+    { year: 2015, model: "bmw", model: "528i" },
+    { year: 1982, model: "buick", model: "skylark" },
+];
+
+// ##############################
