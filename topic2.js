@@ -190,3 +190,41 @@ if (result === null) {
 }
 
 // ##############################
+
+// Variables, Data Types and Functions: String methods
+
+let first = "Knowings is power but enthusiasm pulls the switch";
+let second = "Do or do not. There is no try";
+let third = "4, 8, 15, 16, 23, 42";
+
+// You can even call methods on string literals
+console.log("bob loves you".toUpperCase());
+
+let mySplit = third.split(",");
+console.log(mySplit);
+
+let mySlice = first.slice(3, 8);
+console.log(mySlice);
+
+let mySubstr = first.substr(3, 4);
+console.log(mySubstr);
+
+let myEndsWith = second.endsWith("try");
+console.log(myEndsWith);
+
+let myStartsWith = second.startsWith("do");
+console.log(myStartsWith);
+
+let myInclude = second.includes("there");
+console.log(myInclude);
+
+let myRepeat = "Ha! ".repeat(4);
+console.log(myRepeat);
+
+let myTrim = "     birthday      ";
+console.log(myTrim);
+console.log(myTrim.length);
+console.log(myTrim.trim());
+console.log(myTrim.trim().length);
+
+// ##############################
