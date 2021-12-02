@@ -104,3 +104,31 @@ if (x === "5") {
 } else {
     // alert("false");
 }
+
+function euler() {
+    let n = Math.E;
+    console.log(n);
+}
+
+function log2E() {
+    let m = Math.LOG2E;
+    console.log(m);
+}
+
+function log10E() {
+    let o = Math.LOG10E;
+    console.log(o);
+}
+
+const log2 = function() {
+    let log2 = Math.LN2;
+    console.log(log2);
+};
+
+const log10 = () => console.log(Math.LN10);
+
+euler();
+log2E();
+log10E();
+log2();
+log10();
