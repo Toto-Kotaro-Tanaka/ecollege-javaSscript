@@ -72,9 +72,35 @@ function nutsnBits(x, y) {
     console.log(`The result of the BITWISE AND is ${x & y}`);
     console.log(`The result of the BITWISE OR is ${x | y}`);
     // console.log(`The result of the BITWISE XOR is ${x  y}`);
-    console.log(`The result of the BITWISE NOT is ${x} is ${~x}`);
+    console.log(`The result of the BITWISE shift left operator is ${x << y}`);
+    console.log(
+        `The result of the BITWISE shift left with sign operator is ${x >> 1}`,
+    );
+    console.log(
+        `The result of the BITWISE shift right with zero operator is ${
+            x >>> 1
+        }`,
+    );
 }
 
 document.getElementById("btnNum").addEventListener("click", function() {
     nutsnBits(num1.value, num2.value);
 });
+
+function incAndDec(x) {
+    let result = 0;
+    // ++x;
+    // x++;
+    // --x;
+    // x--;
+    console.log(x);
+}
+
+incAndDec(1);
+
+let x = 5;
+if (x === "5") {
+    // alert("true");
+} else {
+    // alert("false");
+}
