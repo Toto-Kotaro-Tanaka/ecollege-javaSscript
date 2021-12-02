@@ -42,3 +42,39 @@ function getTheDay(date1) {
         myDate.toString(),
     );
 }
+
+let d = new Date();
+console.log("Date: " + d);
+let date = d.getDate();
+let month = d.getMonth();
+console.log("Specific: " + date + " / " + month);
+
+// const num1 = document.getElementById("num1").value;
+
+// function displayNum(num1) {
+//     console.log(num1);
+// }
+
+// document.getElementById("btnNum").addEventListener("click", displayNum(num1));
+
+let num1 = document.getElementById("num1");
+let num2 = document.getElementById("num2");
+
+function nutsnBits(x, y) {
+    x = parseInt(x);
+    y = parseInt(y);
+
+    alert(
+        `The binary representation of the numbers are: ${x.toString(
+            2,
+        )} and ${y.toString(2)}`,
+    );
+    console.log(`The result of the BITWISE AND is ${x & y}`);
+    console.log(`The result of the BITWISE OR is ${x | y}`);
+    // console.log(`The result of the BITWISE XOR is ${x  y}`);
+    console.log(`The result of the BITWISE NOT is ${x} is ${~x}`);
+}
+
+document.getElementById("btnNum").addEventListener("click", function() {
+    nutsnBits(num1.value, num2.value);
+});
