@@ -132,3 +132,23 @@ log2E();
 log10E();
 log2();
 log10();
+
+console.log(Math.PI);
+
+function cos(cos) {
+    console.log(`cos: ${Math.cos(cos)}`);
+}
+
+cos(1);
+
+function sin(sin) {
+    console.log(`sin: ${Math.sin(sin)}`);
+}
+
+sin(1);
+
+function tan(tan) {
+    console.log(`tan: ${Math.tan(tan)}`);
+}
+
+tan(1);
