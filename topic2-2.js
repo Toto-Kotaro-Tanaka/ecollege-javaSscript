@@ -190,3 +190,27 @@ floor(25.38974);
 const ceiling = (ceiling) => console.log(`ceiling: ${Math.ceil(ceiling)}`);
 
 floor(25.8974);
+
+const sqrt = function(sqrt) {
+    console.log(`sqrt: ${Math.sqrt(sqrt)}`);
+};
+
+sqrt(16);
+
+const pow = function(p1, p2) {
+    console.log(`power: ${Math.pow(p1, p2)}`);
+};
+
+pow(2, 3);
+
+const exp = function(exp) {
+    console.log(`exp: ${Math.exp(exp)}`);
+};
+
+exp(4);
+
+const log = function(log) {
+    console.log(`log: ${Math.log(log)}`);
+};
+
+log(8);
