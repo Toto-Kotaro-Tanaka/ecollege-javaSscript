@@ -176,3 +176,17 @@ function atan2(x, y) {
 }
 
 atan2(6, 2);
+
+const abs = function(abs) {
+    console.log(`abs: ${Math.abs(abs)}`);
+};
+
+abs(-897);
+
+const floor = (floor) => console.log(`floor: ${Math.floor(floor)}`);
+
+floor(25.38974);
+
+const ceiling = (ceiling) => console.log(`ceiling: ${Math.ceil(ceiling)}`);
+
+floor(25.8974);
