@@ -214,3 +214,27 @@ const log = function(log) {
 };
 
 log(8);
+
+const minCheck = () => console.log(`Min: ${Math.min(3, 87, 4, 876, 90, 387)}`);
+
+minCheck();
+
+const maxCheck = (n) => console.log(`Max: ${Math.max(3, 87, 4, 876, 90, 387)}`);
+
+maxCheck();
+
+function round(n) {
+    console.log(`Roung: ${Math.round(n)}`);
+}
+
+round(3.27);
+
+function random(min, max) {
+    let minNum = min;
+    let maxNum = max;
+    let range = max - min;
+    let randomNum = Math.floor(Math.random() * range + min);
+    console.log(`Random number: ${randomNum}`);
+}
+
+random(3, 20);
