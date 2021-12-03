@@ -152,3 +152,27 @@ function tan(tan) {
 }
 
 tan(1);
+
+function acos(acos) {
+    console.log(`acos: ${Math.acos(acos)}`);
+}
+
+acos(1);
+
+function asin(asin) {
+    console.log(`asin: ${Math.asin(asin)}`);
+}
+
+asin(1);
+
+function atan(atan) {
+    console.log(`atan: ${Math.atan(atan)}`);
+}
+
+atan(1);
+
+function atan2(x, y) {
+    console.log(`atan2: ${Math.atan2(y, x)}`);
+}
+
+atan2(6, 2);
