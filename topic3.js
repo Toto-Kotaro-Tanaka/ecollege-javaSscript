@@ -76,3 +76,25 @@ switch (hero.toLocaleLowerCase()) {
 // Ternary operator
 
 1 < 2 ? console.log("true") : console.log("false");
+
+// Iteration statements
+/*
+for (let i = 0; i < 10; i++) {
+    console.log(i);
+}
+*/
+
+// let arr = [4, 8, 15, 34, 65];
+
+// for (i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+// }
+
+let x = 1;
+while (x < 10) {
+    console.log(x++);
+
+    // if (x == 7) {
+    //     break;
+    // }
+}
