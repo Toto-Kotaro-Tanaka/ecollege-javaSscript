@@ -98,3 +98,11 @@ while (x < 10) {
     //     break;
     // }
 }
+
+for (i = 1; i < 5; i++) {
+    console.log(`outer: ${i}`);
+
+    for (j = 1; j < 5; j++) {
+        console.log(`inner: -${j}-`);
+    }
+}
