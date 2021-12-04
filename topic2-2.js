@@ -238,3 +238,8 @@ function random(min, max) {
 }
 
 random(3, 20);
+
+console.log(Math.pow(9, 3));
+Math.floor(Math.random() * 5 + 1);
+
+console.log(Math.sqrt(9));
