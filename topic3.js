@@ -40,3 +40,39 @@
 // Code block operator {}
 
 // Array element access operator []
+
+// Decision statements
+
+/*
+const count = 3;
+
+if (count == 4) {
+    console.log(`Count is 4`);
+} else if (count > 4) {
+    console.log(`Count is greater than 4`);
+} else if (count < 4) {
+    console.log(`Count is less than 4`);
+} else {
+    console.log(`Count is not 4`);
+}
+*/
+/*
+const hero = "baTman";
+
+switch (hero.toLocaleLowerCase()) {
+    case "superman":
+        console.log("Super strength");
+        console.log("X-ray vision");
+        break;
+    case "batman":
+        console.log("Intelligence");
+        console.log("Fighting skills");
+        break;
+    default:
+        console.log("Member of JLA");
+}
+*/
+
+// Ternary operator
+
+1 < 2 ? console.log("true") : console.log("false");
