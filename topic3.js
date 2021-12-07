@@ -154,8 +154,29 @@ function Car(make, model, year, colour, distanceMoved, timeElapsed) {
     };
 }
 
+Car.prototype.engine = "turbo";
+
 let mazda = new Car("Mazda", "Atenza", 2020, "Blue", 120, 1.2);
 let honda = new Car("Honda", "CR-V", 2004, "Black");
 
 console.log(mazda.velocity());
-console.log(honda.model);
+console.log(honda.engine);
+
+function PC(make, model, display) {
+    this.make = make;
+    this.model = model;
+    this.display = display;
+}
+
+PC.prototype.color = "silver";
+
+PC.prototype.getReport = function() {
+    console.log(
+        `${this.make}'s ${this.model} has ${this.display} inch screen and ${this.color}`,
+    );
+};
+
+const mac = new PC("Mac", "MacBookAir", 13);
+mac.color = "gold";
+
+mac.getReport();
