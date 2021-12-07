@@ -140,3 +140,16 @@ function Person(firstName, lastName, age, gender, country) {
 }
 
 let toto = new Person("Kotaro", "Tanaka", 21, "M", "Japan");
+
+function Car(make, model, year, colour) {
+    this.make = make;
+    this.model = model;
+    this.year = year;
+    this.colour = colour;
+}
+
+let mazda = new Car("Mazda", "Atenza", 2020, "Blue");
+let honda = new Car("Honda", "CR-V", 2004, "Black");
+
+console.log(mazda.colour);
+console.log(honda.model);
