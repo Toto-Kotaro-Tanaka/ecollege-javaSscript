@@ -114,6 +114,7 @@ dog.name = "max";
 dog.gender = "m";
 dog.age = 9;
 dog.breed = "mixed";
+dog.trained = true;
 
 const cat = {
     name: "Tama",
@@ -122,4 +123,10 @@ const cat = {
     breed: "pelsha",
 };
 
-console.log(cat.name);
+for (d in dog) {
+    console.log(dog[d]);
+}
+
+for (c in cat) {
+    console.log(cat[c]);
+}
