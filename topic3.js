@@ -106,3 +106,20 @@ for (i = 1; i < 5; i++) {
         console.log(`inner: -${j}-`);
     }
 }
+
+// Object Object() - template
+const dog = new Object();
+
+dog.name = "max";
+dog.gender = "m";
+dog.age = 9;
+dog.breed = "mixed";
+
+const cat = {
+    name: "Tama",
+    gender: "f",
+    age: 2,
+    breed: "pelsha",
+};
+
+console.log(cat.name);
