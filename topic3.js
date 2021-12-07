@@ -130,3 +130,13 @@ for (d in dog) {
 for (c in cat) {
     console.log(cat[c]);
 }
+
+function Person(firstName, lastName, age, gender, country) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.gender = gender;
+    this.country = country;
+}
+
+let toto = new Person("Kotaro", "Tanaka", 21, "M", "Japan");
