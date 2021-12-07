@@ -141,15 +141,21 @@ function Person(firstName, lastName, age, gender, country) {
 
 let toto = new Person("Kotaro", "Tanaka", 21, "M", "Japan");
 
-function Car(make, model, year, colour) {
+function Car(make, model, year, colour, distanceMoved, timeElapsed) {
     this.make = make;
     this.model = model;
     this.year = year;
     this.colour = colour;
+    this.distanceMoved = distanceMoved;
+    this.timeElapsed = timeElapsed;
+    this.velocity = function() {
+        const result = this.distanceMoved / this.timeElapsed;
+        return result;
+    };
 }
 
-let mazda = new Car("Mazda", "Atenza", 2020, "Blue");
+let mazda = new Car("Mazda", "Atenza", 2020, "Blue", 120, 1.2);
 let honda = new Car("Honda", "CR-V", 2004, "Black");
 
-console.log(mazda.colour);
+console.log(mazda.velocity());
 console.log(honda.model);
