@@ -180,3 +180,27 @@ const mac = new PC("Mac", "MacBookAir", 13);
 mac.color = "gold";
 
 mac.getReport();
+
+SVGUnitTypes.prototype = new Car();
+
+let emptyObj = {};
+emptyObj = null;
+
+console.log(emptyObj);
+// alert(emptyObj);
+
+let str = "This is a sample string";
+let re = /Sample/i; // i modifier which ignore the case
+let re2 = new RegExp("sample", "i"); // Reg expression
+
+let check = re.exec(str);
+
+if (check) {
+    // alert("Found a match");
+    // alert(check);
+} else {
+    // alert("No match");
+}
+
+let check2 = re.test(str);
+// alert(check2);
