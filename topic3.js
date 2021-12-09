@@ -208,3 +208,9 @@ let check2 = re.test(str);
 let str = "hello world";
 let n = str.substr(2, 3); // Start with index 2 for 3 characters
 let m = str.substring(2, 3); // Start with index 2 till index 3 (excluding index of second parameter)
+
+let strSpace = "     Hello World   ";
+let strSpaceLower = strSpace.toLowerCase();
+let strSpaceUpper = strSpace.toUpperCase();
+let strSpaceTrim = strSpace.trim();
+let strSpaceBold = strSpace.bold();
