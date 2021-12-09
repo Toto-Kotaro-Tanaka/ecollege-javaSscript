@@ -204,3 +204,7 @@ if (check) {
 
 let check2 = re.test(str);
 // alert(check2);
+
+let str = "hello world";
+let n = str.substr(2, 3); // Start with index 2 for 3 characters
+let m = str.substring(2, 3); // Start with index 2 till index 3 (excluding index of second parameter)
