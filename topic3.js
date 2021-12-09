@@ -205,12 +205,24 @@ if (check) {
 let check2 = re.test(str);
 // alert(check2);
 
-let str = "hello world";
-let n = str.substr(2, 3); // Start with index 2 for 3 characters
-let m = str.substring(2, 3); // Start with index 2 till index 3 (excluding index of second parameter)
+let str1 = "hello world";
+let n = str1.substr(2, 3); // Start with index 2 for 3 characters
+let m = str1.substring(2, 3); // Start with index 2 till index 3 (excluding index of second parameter)
 
 let strSpace = "     Hello World   ";
 let strSpaceLower = strSpace.toLowerCase();
 let strSpaceUpper = strSpace.toUpperCase();
 let strSpaceTrim = strSpace.trim();
 let strSpaceBold = strSpace.bold();
+
+let myNum1 = 123.456789;
+let myNum2D = myNum1.toFixed(2);
+console.log(myNum2D);
+
+let today = new Date();
+console.log(today);
+let anniversary = new Date("February 21, 1995");
+console.log(anniversary);
+let birthday = new Date(1970, 04, 24);
+console.log(birthday);
+console.log(today.getDay());
