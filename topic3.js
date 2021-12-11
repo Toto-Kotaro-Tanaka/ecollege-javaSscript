@@ -226,3 +226,35 @@ console.log(anniversary);
 let birthday = new Date(1970, 04, 24);
 console.log(birthday);
 console.log(today.getDay());
+
+b = Boolean(8);
+console.log(b);
+
+let xx = 10;
+let yy = 5;
+
+while (xx > yy) {
+    console.log(xx + yy);
+    xx--;
+    yy++;
+}
+
+let animals = ["c", "p", "ca", "d"];
+for (x = 0; x < animals.length; x++) {
+    console.log(animals[x++]);
+}
+
+let xxx = 2;
+switch (xxx) {
+    case 1:
+        console.log("1");
+        break;
+    case 2:
+        console.log("2");
+        break;
+    case 3:
+        console.log("3");
+        break;
+    default:
+        console.log("None of the above");
+}
