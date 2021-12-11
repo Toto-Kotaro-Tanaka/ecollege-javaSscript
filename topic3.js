@@ -258,3 +258,24 @@ switch (xxx) {
     default:
         console.log("None of the above");
 }
+
+try {
+    allert("hello");
+} catch (e) {
+    console.log(e.message);
+}
+
+let newURL;
+
+const setEncode = function(myURL) {
+    newURL = encodeURIComponent(myURL);
+    console.log(`Encode: ${newURL}`);
+};
+
+const setDecode = () => {
+    decodeURL = decodeURIComponent(newURL);
+    console.log(`Decode: ${decodeURL}`);
+};
+
+setEncode("is keen");
+setDecode();
