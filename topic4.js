@@ -4,3 +4,12 @@
 document
     .getElementById("clickMe")
     .addEventListener("click", () => console.log("hey..."));
+
+const btn = document.getElementById("remdiv");
+const tempDiv = document.getElementById("tempDiv");
+
+const removeDiv = () => {
+    tempDiv.parentNode.removeChild(tempDiv);
+};
+
+btn.addEventListener("click", removeDiv);
