@@ -8,8 +8,16 @@ document
 const btn = document.getElementById("remdiv");
 const tempDiv = document.getElementById("tempDiv");
 
-const removeDiv = () => {
-    tempDiv.parentNode.removeChild(tempDiv);
-};
-
-btn.addEventListener("click", removeDiv);
+btn.addEventListener("click", function removeDiv() {
+    let status = document.getElementById("remdiv").value;
+    if (status === "Remove") {
+        tempDiv.parentNode.removeChild(tempDiv);
+        btn.value = "Replace";
+    } else {
+        let eDiv = document.createElement("div");
+        eDiv.id = "tempDiv";
+        document.body.appendChild(eDiv);
+        btn.value = "Remove";
+    }
+    console.log(status);
+});
