@@ -52,4 +52,7 @@ function addList() {
     document.getElementById("transportation").appendChild(newNode);
 }
 
-function removeList() {}
+function removeList() {
+    let list = document.getElementById("transportation");
+    list.removeChild(list.childNodes[0]);
+}
