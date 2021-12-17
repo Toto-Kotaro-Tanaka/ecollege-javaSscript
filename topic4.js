@@ -21,3 +21,35 @@ btn.addEventListener("click", function removeDiv() {
     }
     console.log(status);
 });
+
+let listItem = 0;
+
+function addList() {
+    if (listItem >= 4) {
+        listItem = 0;
+    }
+
+    if (listItem == 0) {
+        let travelMode = "Plane";
+    }
+
+    if (listItem == 1) {
+        let travelMode = "Train";
+    }
+
+    if (listItem == 2) {
+        let travelMode = "Automobile";
+    }
+
+    if (listItem == 3) {
+        let travelMode = "Boat";
+    }
+    listItem++;
+
+    let newNode = document.createElement("LI");
+    let textNode = document.createTextNode("travelMode");
+    newNode.appendChild(textNode);
+    document.getElementById("transportation").appendChild(newNode);
+}
+
+function removeList() {}
